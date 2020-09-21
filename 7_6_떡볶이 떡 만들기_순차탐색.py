@@ -1,5 +1,4 @@
-n,m = map(int,input().split())
-array= list(map(int,input().split()))
+
 total= [0]*n
 h=0
 # def binary_search(array,target,start,end):
