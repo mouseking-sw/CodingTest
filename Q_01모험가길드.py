@@ -4,23 +4,22 @@ n= int(input())
 x= list(map(int,input().split()))
 
 x.sort()
-x.reverse()
+# 1 2 2 2 3
 count=0
 r=n
 #count 그룹수
 #r 잔여 명수?
 
-while r !=0:
-    for i in x:
-        if r ==0:
-            break
-        else:
-         r=r-i
-         count+=1
+#while r !=0:
+for i in x:
+    if r < i:
+        # print(r,i,count,'a')
+        break
+    else:
+        r=r-i
+        count+=1
+        # print(r,i,count,'b')
 print(count)
-
-### 남은 그룹이 있어도 된다는 점에서 착안 가장 공포도가 높은 그룹부터 그룹화 후 count 1+ 
-
 
 
 
